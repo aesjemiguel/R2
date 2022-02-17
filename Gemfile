@@ -1,3 +1,4 @@
+# coding: utf-8
 source "https://rubygems.org"
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -6,8 +7,12 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 #
 # This will help ensure the proper Jekyll version is running.
+
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.1"
+# retirar esta gem para puder correr no github
+#gem "jekyll", "~> 4.2.1"
+gem "github-pages", "~> 223", group: :jekyll_plugins
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -28,3 +33,5 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
+# é necessário acrescentar esta gem, não sei o que faz!
+gem "webrick", "~> 1.7"
